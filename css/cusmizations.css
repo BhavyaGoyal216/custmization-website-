@@ -1,0 +1,311 @@
+* {
+  margin: 0em;
+  padding: 0em;
+  box-sizing: border-box;
+}
+body {
+  /* height: 100vh; */
+  background-color: #f8a7e8;
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  /* position: sticky; */
+  /* top: 0px; */
+  z-index: 1;
+  background-color: #3d4250;
+}
+.navbar {
+  display: flex;
+  height: 4em;
+  width: 60%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.navbar a {
+  padding: 0em 0.5em;
+  color: white;
+  text-decoration: none;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: bold;
+  border-radius: 0.5em;
+  transition: all 100ms ease;
+}
+.navbar a:hover {
+  background-color: white;
+  border-radius: 0.5em;
+  color: #2a3748;
+}
+.nav-right {
+  display: flex;
+  height: 4em;
+  width: 40%;
+  flex-direction: row-reverse;
+  justify-content: right;
+  align-items: center;
+}
+.nav-right a {
+  margin: 0em 1.5em;
+  padding: 0em 0.5em;
+  text-decoration: none;
+  color: white;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: bold;
+  transition: all 100ms ease;
+}
+.nav-right a:hover {
+  background-color: white;
+  border-radius: 0.5em;
+  color: #2a3748;
+}
+
+.home {
+  background: url(/backgrounds/pexels-soumil-kumar-735911.jpg) no-repeat center
+    center/cover;
+  font-size: 1.5em;
+  color: white;
+  position: absolute;
+  top: 0px;
+  height: 98vh;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.9;
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+}
+.home-container {
+  display: inline-block;
+
+  height: 8em;
+  width: 50%;
+  margin: 0em 4.3em;
+  overflow: hidden;
+}
+.home-container h1 {
+  animation: find 1500ms ease 1s 1 forwards;
+}
+@keyframes find {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+.home-container input {
+  animation: search 1500ms ease 1s 1 forwards;
+}
+@keyframes search {
+  0% {
+    transform: translateX(150%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+#search {
+  font-family: "Arvo", serif;
+  /* font-family: "Acme", sans-serif; */
+  border: none;
+  outline: none;
+  height: 3em;
+  width: 35em;
+  position: relative;
+  left: 4em;
+  padding: 0em 1em;
+}
+.display {
+  display: inline-block;
+  margin-right: 8em;
+  height: 16em;
+  width: 16em;
+}
+.box1 {
+  height: 16em;
+  width: 16em;
+  background-color: white;
+  border: black solid 2px;
+  transform: rotate(30deg);
+  position: absolute;
+  box-shadow: 2px 2px 30px 5px black;
+}
+.box2 {
+  height: 16em;
+  width: 16em;
+  background-color: white;
+  border: black solid 2px;
+  transform: rotate(45deg);
+  position: absolute;
+  box-shadow: 2px 2px 30px 5px black;
+}
+
+.box3 {
+  height: 16em;
+  width: 16em;
+  background-color: white;
+  border: black solid 2px;
+  position: absolute;
+  transform: rotate(-30deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box3 img {
+  height: 12em;
+  width: 18em;
+  transform: rotate(25deg);
+
+  box-shadow: 2px 2px 30px 5px black;
+}
+.purchase {
+  background: url(/backgrounds/pexels-marta-branco-1194713.jpg) no-repeat center
+    center/cover;
+  background-color: black;
+
+  position: absolute;
+  top: 100vh;
+
+  height: 98vh;
+  width: 100%;
+  opacity: 0.85;
+  z-index: -1;
+  font-size: 1.5em;
+}
+.purchase-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.square1 {
+  background-color: #f5c7ec;
+  height: 15em;
+  width: 20em;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #2a3748;
+  border-radius: 30px;
+}
+.square2 {
+  background-color: #f5c7ec;
+  height: 15em;
+  width: 20em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #2a3748;
+  border-radius: 30px;
+}
+.square3 {
+  background-color: #f5c7ec;
+  height: 15em;
+  width: 20em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #2a3748;
+  border-radius: 30px;
+}
+.img {
+  object-fit: cover;
+  object-position: center;
+  height: 10em;
+  width: 15em;
+  box-shadow: 3px 3px 10px 5px black;
+  margin: 1em 1em;
+  border-radius: 20px;
+}
+.prices {
+  padding: 0.5em;
+  font-weight: bold;
+}
+
+.third {
+  background: url(/backgrounds/pexels-david-sun-955081.jpg) no-repeat center
+    center/cover;
+  font-size: 1.5em;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 200vh;
+
+  opacity: 0.85;
+  z-index: -1;
+}
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about p {
+  font-size: 1em;
+  font-family: "Arvo", serif;
+  margin: 2em 0.5em;
+  padding: 0em 5em;
+  color: aliceblue;
+  pointer-events: none;
+}
+.contact {
+  margin: 2em 0em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contact h1 {
+  margin: 1em 0.5em;
+}
+.contactsymbols {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.symbol1 a img {
+  height: 4em;
+  width: 4em;
+}
+.symbol2 a img {
+  height: 4em;
+  width: 4em;
+}
+.symbol3 a img {
+  height: 4em;
+  width: 4em;
+}
+.symbol4 a img {
+  height: 4em;
+  width: 4em;
+}
+
+.copyright {
+  margin: 1em auto;
+  font-weight: bold;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  text-align: center;
+  background-color: white;
+  opacity: 0.3;
+}
+/* utility classes */
+.h-primary {
+  font-size: 2em;
+  font-family: "Arvo", serif;
+  margin: 0.5em 0.5em;
+  padding: 0em 0.5em;
+  color: aliceblue;
+  pointer-events: none;
+}
